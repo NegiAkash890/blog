@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-01-27T16:42:02+00:00</updated><id>/feed.xml</id><title type="html">The Blog</title><subtitle>Made with &lt;b style=&quot;color: #f45;&quot;&gt;&amp;lt;3&lt;/b&gt;</subtitle><author><name>Akash Negi</name></author><entry><title type="html">Lifecycle Methods</title><link href="/lifecycle-methods/" rel="alternate" type="text/html" title="Lifecycle Methods" /><published>2021-01-27T00:00:00+00:00</published><updated>2021-01-27T00:00:00+00:00</updated><id>/lifecycle-methods</id><content type="html" xml:base="/lifecycle-methods/"><![CDATA[<p>Let gets started with react lifecycle methods</p>
+
+<h2 id="lifecycle-methods">Lifecycle Methods</h2>
+<p>Each component in react has a lifecycle.<br />
+We can either monitor or manipulate it during :</p>
+<ul>
+  <li>Mouting</li>
+  <li>Updating</li>
+  <li>Unmounting</li>
+</ul>
+
+<p>What is mouting ?</p>
+
+<p>Putting elements into the DOM (Document Object Model)
+There are 4 methods that get called in this order when mouting a component:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. constructor<span class="o">()</span>
+2. getDerivedStateFromProps<span class="o">()</span>
+3. render<span class="o">()</span>
+4. componentDidMount<span class="o">()</span>
+</code></pre></div></div>
+<p>Note : render() method is the only required methods rest are optional</p>
+
+<h3 id="constructorprops">constructor(props)</h3>
+
+<ul>
+  <li>This is called before anything else</li>
+  <li>Used as : Natural place to intialise state</li>
+  <li>It’s called with props as argument</li>
+</ul>
+
+<p>Before doing anything in constructor call <a href="https://overreacted.io/why-do-we-write-super-props/">super(props)</a>.
+Why ? So we can inherit parent methods from React.Component.</p>
+
+<h3 id="getderivedstatefromprops">getDerivedStateFromProps</h3>
+
+<ul>
+  <li>This method is called right before rendering the element(s) in the DOM.</li>
+  <li>Used as : Natural place to set the state based on the intial props.</li>
+  <li>Why we need : It enables a component to update its internal state as a result of change in props</li>
+  <li>This lifecycle is called any time a parent component rerenders, regardless of whether the props are “different” from before</li>
+</ul>
+
+<h3 id="render">render</h3>
+
+<ul>
+  <li>This is required</li>
+  <li>Usage: Output HTML to DOM</li>
+</ul>
+
+<h3 id="componentdidmount">componentDidMount</h3>
+
+<ul>
+  <li>Called after the component is rendered</li>
+  <li>Used as : Place to call APIs</li>
+</ul>]]></content><author><name>Akash Negi</name></author><category term="react" /><summary type="html"><![CDATA[Let gets started with react lifecycle methods]]></summary></entry></feed>
