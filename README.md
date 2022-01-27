@@ -1,1 +1,1 @@
-Blogify
+Welcome to Blogify
